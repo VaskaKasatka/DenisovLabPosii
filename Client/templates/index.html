@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .title {
+            margin: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20;
+        }
+        .form-group {
+            padding-right: 800px;
+            padding-left: 20px;
+            margin: 0 auto;
+        }
+        .resultbt {
+            margin: 0 auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Lab</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="title">
+                <h1>Happieness</h1>
+            </div>
+
+                <div class="form-group">
+                    <form action="/uploader" method="POST"
+                          enctype="multipart/form-data">
+                        <div class="input-group mb-3">
+							<label for="name">Continent (1 - Europe, 2 - Asia, 3 - Australia, 4 - North America, 5 - South America, 6 - Africa)</label>
+							<br><input type="text" name="input2" value="1"><br>
+							<label for="name">GDP per capita (From 0 to 2):</label>
+							<br><input type="text" name="input4" value="1.340"><br>
+							<label for="name">Social support (From 0 to 2)</label>
+							<br><input type="text" name="input5" value="1.587"><br>
+							<label for="name">Healthy life expectancy (From 0 to 2)</label>
+							<br><input type="text" name="input6" value="0.986"><br>
+							<label for="name">Freedom to make life choices (From 0 to 1)</label>
+							<br><input type="text" name="input7" value="0.596"><br>
+							<label for="name">Generosity (From 0 to 1)</label>
+							<br><input type="text" name="input8" value="0.153"><br>
+							<label for="name">Perceptions of corruption (From 0 to 1)</label>
+							<br><input type="text" name="input9" value="0.393"><br>
+                        </div>
+                        <div class="resultbt">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Output</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
